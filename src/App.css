@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+/* Slow Rotation */
+/* ---------------------------
+   Animations for LandingPage
+   --------------------------- */
+
+/* initial (no animation) safe state */
+.u-preAnimate {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* slide up from below + gentle fade */
+@keyframes slideUpFromBelow {
+  0% {
+    transform: translateY(28px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* quick fade-in with small delay - used for button */
+@keyframes quickFadeIn {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* soft scale-up for image */
+@keyframes gentleScaleUp {
+  0% {
+    transform: scale(0.96);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* utility classes to apply animations */
+.u-slideUp {
+  animation: slideUpFromBelow 700ms cubic-bezier(.2,.9,.2,1) both;
+}
+
+.u-fadeInDelay {
+  animation: quickFadeIn 600ms ease both 220ms;
+}
+
+.u-scaleUp {
+  animation: gentleScaleUp 740ms cubic-bezier(.2,.9,.2,1) both 80ms;
+}
+
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.3s ease-out;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out;
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animate-popUp {
+  animation: popUp 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---------------------------
+   Scrollbar Styles - AGGRESSIVE HIDING
+   --------------------------- */
+
+/* Hide scrollbar utility class */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+/* COMPLETELY HIDE all scrollbars */
+* {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+*::-webkit-scrollbar-track {
+  display: none !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  display: none !important;
+}
+
+body, html {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure root element also hides scrollbar */
+#root {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+#root::-webkit-scrollbar {
+  display: none !important;
+}
+
+@keyframes cart-shine {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
