@@ -234,12 +234,12 @@ export default function LandingPage() {
         .animate-count-up { animation: countUp 0.6s ease-out both; }
 
         .shimmer-text {
-          background: linear-gradient(90deg, #166534 0%, #4ade80 25%, #166534 50%, #4ade80 75%, #166534 100%);
+          background: linear-gradient(90deg, #23bd5eff 0%, #4ade80 25%, #23bd5eff 50%, #4ade80 75%, #23bd5eff 100%);
           background-size: 200% auto;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
-          animation: shimmer 4s linear infinite;
+          animation: shimmer 7s linear infinite;
         }
 
         /* ===== DECORATIVE DIVIDER ===== */
@@ -323,8 +323,8 @@ export default function LandingPage() {
       {/* ================= NAVBAR ================= */}
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${showNavbar
-            ? "shadow-lg"
-            : "bg-transparent"
+          ? "shadow-lg"
+          : "bg-transparent"
           }`}
         style={
           showNavbar
@@ -369,7 +369,7 @@ export default function LandingPage() {
       </header>
 
       {/* ================= HERO SECTION ================= */}
-      <section className="relative min-h-screen flex items-center justify-center">
+      <section className="relative min-h-screen bg-[#000000aa] flex items-center justify-center">
         {/* Dark overlay on the fixed background */}
         <div
           className="absolute inset-0"
