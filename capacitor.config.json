@@ -1,0 +1,9 @@
+{
+  "appId": "com.swadisht.customer",
+  "appName": "Swadisht Customer",
+  "webDir": "dist",
+  "server": {
+    "url": "http://localhost:5173",
+    "cleartext": true
+  }
+}
