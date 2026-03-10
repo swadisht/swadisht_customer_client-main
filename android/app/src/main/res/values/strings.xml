@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Swadisht Customer</string>
-    <string name="title_activity_main">Swadisht Customer</string>
+    <string name="app_name">Swadisthz</string>
+    <string name="title_activity_main">Swadisthz</string>
     <string name="package_name">com.swadisht.customer</string>
     <string name="custom_url_scheme">com.swadisht.customer</string>
 </resources>

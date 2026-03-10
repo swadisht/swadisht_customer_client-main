@@ -188,8 +188,8 @@ export default function Greet() {
                 onClick={submitReview}
                 disabled={loading}
                 className={`flex-1 py-4 rounded-xl font-bold text-base transition-all duration-200 ${loading
-                    ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                    : "bg-green-600 hover:bg-green-700 text-white shadow-lg hover:shadow-xl active:scale-95"
+                  ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                  : "bg-green-600 hover:bg-green-700 text-white shadow-lg hover:shadow-xl active:scale-95"
                   }`}
               >
                 {loading ? "Submitting..." : "Submit Review"}
@@ -249,7 +249,7 @@ export default function Greet() {
       {/* FOOTER */}
       <div className="mt-12 text-center animate-fadeIn delay-800">
         <p className="text-gray-500 text-sm">
-          Powered by <span className="font-bold text-green-700">Swadisht</span>
+          Powered by <span className="font-bold text-green-700">Swadisthz</span>
         </p>
         <p className="text-gray-400 text-xs mt-1">
           © {new Date().getFullYear()} All rights reserved

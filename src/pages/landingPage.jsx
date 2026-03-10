@@ -57,7 +57,7 @@ export default function LandingPage() {
 
         if (!mounted) return;
 
-        setRestaurantName(data?.restaurantName || "Swadisht");
+        setRestaurantName("Swadisthz");
 
         setRestaurantData({
           profilePhoto: data?.profilePhoto || data?.photo || data?.image,
@@ -75,7 +75,7 @@ export default function LandingPage() {
       } catch (err) {
         console.error("❌ Restaurant fetch failed:", err);
         if (mounted) {
-          setRestaurantName("Swadisht");
+          setRestaurantName("Swadisthz");
           setRestaurantData({
             profilePhoto: null,
             galleryImages: [],
@@ -349,7 +349,7 @@ export default function LandingPage() {
                 }`}
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              {restaurantName || "Swadisht"}
+              {restaurantName || "Swadisthz"}
             </h1>
           </div>
 
@@ -414,7 +414,7 @@ export default function LandingPage() {
                 backgroundClip: "text",
               }}
             >
-              {restaurantName || "Swadisht"}
+              {restaurantName || "Swadisthz"}
             </span>
           </h1>
 
@@ -478,7 +478,7 @@ export default function LandingPage() {
               About Us
             </p>
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-              The <span className="text-green-700">Swadisht</span> Story
+              The <span className="text-green-700">Swadisthz</span> Story
             </h2>
             <div className="indian-divider">
               <div className="indian-divider-icon" />
@@ -491,7 +491,7 @@ export default function LandingPage() {
             <div className="food-image-wrapper animate-slide-left">
               <img
                 src="/download.jpg"
-                alt="Authentic Indian Tiffin by Swadisht"
+                alt="Authentic Indian Tiffin by Swadisthz"
                 className="w-full h-[320px] md:h-[440px] object-cover"
                 style={{ borderRadius: "20px" }}
               />
@@ -519,7 +519,7 @@ export default function LandingPage() {
 
               <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-6">
                 {restaurantData?.description ||
-                  `At Swadisht, we believe every meal should feel like home. Our tiffin service
+                  `At Swadisthz, we believe every meal should feel like home. Our tiffin service
                   brings you the authentic flavors of traditional Indian cooking — from aromatic
                   dals and freshly made rotis to seasonal sabzis and comforting rice dishes.
                   Every ingredient is handpicked, every spice is freshly ground, and every meal
@@ -531,7 +531,7 @@ export default function LandingPage() {
                 hygiene, and consistency. That's why our kitchen follows strict quality standards
                 while preserving the old-world charm of homestyle Indian cooking. Whether you're
                 a student away from home, a busy professional, or a family looking for hassle-free
-                meals, Swadisht is your trusted tiffin partner.
+                meals, Swadisthz is your trusted tiffin partner.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -635,7 +635,7 @@ export default function LandingPage() {
             <div className="food-image-wrapper relative">
               <img
                 src="/images.jpg"
-                alt="Swadisht Complete Indian Thali"
+                alt="Swadisthz Complete Indian Thali"
                 className="w-full h-[320px] md:h-[480px] object-cover"
                 style={{ borderRadius: "20px" }}
               />
@@ -671,7 +671,7 @@ export default function LandingPage() {
             </p>
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
               Why Choose{" "}
-              <span className="text-green-700">Swadisht</span>?
+              <span className="text-green-700">Swadisthz</span>?
             </h2>
             <div className="indian-divider">
               <div className="indian-divider-icon" />
@@ -875,7 +875,7 @@ export default function LandingPage() {
 
             <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
               Don't just take our word for it — hear from our happy customers who have made
-              Swadisht their daily tiffin choice. Real reviews, real satisfaction.
+              Swadisthz their daily tiffin choice. Real reviews, real satisfaction.
             </p>
 
             <HapticButton
@@ -929,7 +929,7 @@ export default function LandingPage() {
                   className="text-xl font-bold text-white"
                   style={{ fontFamily: "'Playfair Display', serif" }}
                 >
-                  {restaurantName || "Swadisht"}
+                  {restaurantName || "Swadisthz"}
                 </h3>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed">
@@ -994,10 +994,10 @@ export default function LandingPage() {
           <div className="border-t border-gray-800 pt-6 md:pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-3">
               <p className="text-gray-500 text-xs md:text-sm">
-                © {new Date().getFullYear()} {restaurantName || "Swadisht"} Tiffin Service. All Rights Reserved.
+                © {new Date().getFullYear()} {restaurantName || "Swadisthz"} Tiffin Service. All Rights Reserved.
               </p>
               <p className="text-gray-600 text-xs">
-                Powered by <span className="text-green-500 font-semibold">Swadisht</span>
+                Powered by <span className="text-green-500 font-semibold">Swadisthz</span>
               </p>
             </div>
           </div>

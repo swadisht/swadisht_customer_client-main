@@ -41,10 +41,10 @@ export default function Footer({ restaurantName }) {
         {/* ================= BRAND ================= */}
         <div className="mb-6">
           <p className="text-base font-bold text-gray-600">
-            {restaurantName || "Swadisht"}
+            {restaurantName || "Swadisthz"}
           </p>
           <p className="text-[10px] tracking-[0.25em] uppercase text-gray-400 mt-0.5">
-            Powered by Swadisht
+            Powered by Swadisthz
           </p>
         </div>
 
@@ -56,7 +56,7 @@ export default function Footer({ restaurantName }) {
           <p>
             © {new Date().getFullYear()}{" "}
             <span className="font-semibold text-gray-600">
-              {restaurantName || "Swadisht"}
+              {restaurantName || "Swadisthz"}
             </span>
           </p>
 

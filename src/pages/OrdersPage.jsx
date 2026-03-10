@@ -631,7 +631,7 @@ export default function OrdersPage() {
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 md:px-16 text-center">
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Powered by Swadisht
+            © {new Date().getFullYear()} Powered by Swadisthz
           </p>
         </div>
       </footer>
